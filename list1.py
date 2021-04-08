@@ -22,6 +22,7 @@
 # Note: python does not have a ++ operator, but += works.
 from operator import itemgetter
 
+
 def match_ends(words):
     kol = 0
     for item in words:
@@ -64,7 +65,7 @@ def front_x(words):
 #      [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
 # Hint: use sorted() function and a custom key= function to extract the last element form each tuple.
 def sort_last(tuples):
-    tuples1 = tuple(sorted(tuples, key=itemgetter(-1)))
+    tuples1 = sorted(tuples, key=itemgetter(-1))
     return tuples1
 
 
